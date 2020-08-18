@@ -51,9 +51,9 @@ print(f"Total Months:  {(len(Total_Months))}")
 print(f"Total: $ {sum(Total_Profit_Losses)}")
 
 print(f"Average Change: $ {str(PL_Average_Change)}")
-print(f"Greatest Increase in Profits:  ({(str(Months_G_Increase_Change))}) (${(str(greatest_increase_pl))})")
+print(f"Greatest Increase in Profits:  {(str(Months_G_Increase_Change))} (${(str(greatest_increase_pl))})")
 
-print(f"Greatest Decrease in Profits: ({(str(Months_G_Decrease_Change))}) (${(str(greatest_decrease_pl))})")
+print(f"Greatest Decrease in Profits: {(str(Months_G_Decrease_Change))} (${(str(greatest_decrease_pl))})")
 
 
 #Write to output file
@@ -71,9 +71,9 @@ with open(output_path, 'w') as csvfile:
     csvfile.write("\n")    
     csvfile.write(f"Total: $ {(sum(Total_Profit_Losses))}")
     csvfile.write("\n")
-    csvfile.write(f"Average Change:  {str(PL_Average_Change)}")
+    csvfile.write(f"Average Change: $ {str(PL_Average_Change)}")
     csvfile.write("\n")
-    csvfile.write(f"Greatest Increase in Profits:  ({(str(Months_G_Increase_Change))}) (${(str(greatest_increase_pl))})")
+    csvfile.write(f"Greatest Increase in Profits:  {(str(Months_G_Increase_Change))} (${(str(greatest_increase_pl))})")
     csvfile.write("\n")
-    csvfile.write(f"Greatest Decrease in Profits: ({(str(Months_G_Decrease_Change))}) (${(str(greatest_decrease_pl))})")
+    csvfile.write(f"Greatest Decrease in Profits: {(str(Months_G_Decrease_Change))} (${(str(greatest_decrease_pl))})")
     csvfile.write("\n")
